@@ -59,3 +59,7 @@ futuro se arreglará)
 Para borrar un pixel encendido solo da click izquierdo encima del pixel.
 
 Para borrar una figura presiona _supr_ (Suprimir) y da click izquierdo sobre el nombre de la figura que quieras borrar que se muestra en el panel de la derecha.
+
+**Limpiar**
+
+Limpiar/Reiniciar es eliminar TODO lo que tienes en la pantalla. Presiona la tecla _esc_ (Escape).
