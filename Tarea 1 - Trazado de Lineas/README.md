@@ -22,9 +22,9 @@ python main.py [--s|--l|--d]
 
 ## Flags
 
-- --s (width,height): Tamaño de la ventana
-- --l: Modo ligero, esto en caso de necesitar tamaños muy grandes y procesamientos muy pesados
-- --d (x,y): Tamaño la cuadrícula donde se mostrarán las figuras
+- --s (width,height): Tamaño de la ventana. Ej "python main.py --s=(500,500)", creará una ventana de 500x500
+- --l: Modo ligero, esto en caso de necesitar tamaños muy grandes y procesamientos muy pesados. Ej "python main.py --l=True"
+- --d (x,y): Tamaño la cuadrícula donde se mostrarán las figuras. Ej "python main.py --s=(50,50)", creará una cuadrícula de 50x50
 
 
 ## Como usar
@@ -65,6 +65,7 @@ futuro se arreglará)
 Para borrar un pixel encendido solo da click izquierdo encima del pixel.
 
 Para borrar una figura presiona _supr_ (Suprimir) y da click izquierdo sobre el nombre de la figura que quieras borrar que se muestra en el panel de la derecha.
+Una vez termines de borrar vuelve a presionar _supr_ para desactivar la funcion de borrar al dar click.
 
 ![Borrar](https://user-images.githubusercontent.com/38016639/156116347-447ae6ac-2e9b-4bd9-8c6b-c363f4c5b72c.gif)
 
