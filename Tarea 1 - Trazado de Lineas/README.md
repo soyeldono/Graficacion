@@ -42,11 +42,15 @@ pero NO recordará los pixeles que se enciendan por crear un figura como por eje
 da click izquierdo (L\_Click) en cualquiera de los pixeles. Para quitar un pixel encendido vuelve 
 a presionar encima del mismo pixel.
 
+![Puntos](https://user-images.githubusercontent.com/38016639/156116219-066757a1-7dfb-4f31-a408-ed4d96c5e602.gif)
+
 **Linea** 
 
 Para dibujar lineas es necesario tener dos puntos, presiona la tecla _l_ (L minus). (En caso de que no se muestre es o, por que 
 tienes más de dos puntos cargados en la memoria en cuyo caso presiona _r_ y vuelve a seleccionar otros dos prixeles y si esto no 
 funciona presiona la tecla _esc_. Esto se debe a un bug que en un futuro se arreglará)
+
+![Linea](https://user-images.githubusercontent.com/38016639/156116253-d2368f47-f8b6-4d47-bfb6-3dd24fcbc0c7.gif)
 
 **Triangulo**
 
@@ -54,12 +58,18 @@ El triangulo requiere tres puntos, presiona la tecla _t_. (En caso de que no se 
 en cuyo caso presiona _r_ y vuelve a seleccionar otros dos prixeles y si esto no funciona presiona la tecla _esc_. Esto se debe a un bug que en un 
 futuro se arreglará)
 
+![Triangulo](https://user-images.githubusercontent.com/38016639/156116300-38d5e16b-cb20-4b06-8cbc-10c573e2e0ca.gif)
+
 **Borrar**
 
 Para borrar un pixel encendido solo da click izquierdo encima del pixel.
 
 Para borrar una figura presiona _supr_ (Suprimir) y da click izquierdo sobre el nombre de la figura que quieras borrar que se muestra en el panel de la derecha.
 
+![Borrar](https://user-images.githubusercontent.com/38016639/156116347-447ae6ac-2e9b-4bd9-8c6b-c363f4c5b72c.gif)
+
 **Limpiar**
 
 Limpiar/Reiniciar es eliminar TODO lo que tienes en la pantalla. Presiona la tecla _esc_ (Escape).
+
+![Limpiar](https://user-images.githubusercontent.com/38016639/156116370-27775beb-2f72-411c-a6ec-0cd3952ce2e3.gif)
