@@ -1,5 +1,7 @@
 import pygame as pg
 from pygame.locals import *
+from sklearn.linear_model import PassiveAggressiveClassifier
+from sympy import arg
 from win32api import GetSystemMetrics
 import Objects
 from Objects.line import Line
@@ -10,7 +12,7 @@ import time
 from copy import copy
 import random as rd
 import logging
-
+import argparse
 
 W = GetSystemMetrics(0) - 500
 H = GetSystemMetrics(1) - 400
@@ -19,9 +21,22 @@ x,y = (20,20)
 esc_x = 0.7
 esc_y = 1
 
-print(W,H)
+parser = argparse.ArgumentParser()
 
-G = Grid((W,H),(x,y),(esc_x,esc_y),light=True)
+parser.add_argument('--s',type=str,default=(W,H),help="Tamaño de la pantalla")
+parser.add_argument('--l',type=bool,default=False,help="Inicio en modo ligero para ahorrar recursos de la pc a cambio de ser un poco mas lento")
+parser.add_argument('--d',type=str,default=(x,y),help="Tamaño de la maya de los pixeles")
+args = parser.parse_args()
+
+W = int(args.s.split(',')[0][1:]) if isinstance(args.s,str) else args.s[0]
+H = int(args.s.split(',')[1][:-1]) if isinstance(args.s,str) else args.s[1]
+
+_light = args.l
+
+x = int(args.d.split(',')[0][1:]) if isinstance(args.d,str) else args.d[0]
+y = int(args.d.split(',')[1][:-1]) if isinstance(args.d,str) else args.d[1]
+
+G = Grid((W,H),(x,y),(esc_x,esc_y),light=_light)
 P = Panel([],W*0.75,H*0.1,W*0.20,H*0.8)
 
 pg.init()
@@ -36,6 +51,8 @@ ADDED = []
 
 FOCUS = None
 DEL = False
+
+print(W,H)
 
 logging.basicConfig(filename="Graficacion.log",format='%(asctime)s %(message)s',filemode="w")
 logger=logging.getLogger()
@@ -58,11 +75,8 @@ while True:
     # ------------ LA LISTA DE LAS FIGURAS
     P.draw(screen)
 
-
-
     keys = pg.key.get_pressed()
 
-    
     for event in pg.event.get():
         if event.type == pg.QUIT:
             logger.info("Se termino de ejecutar el programa")
@@ -150,9 +164,7 @@ while True:
                     i = G.grid[min_ + xmin_]
                     
                     if i.left <= pg.mouse.get_pos()[0] <= i.left+i.width and i.top <= pg.mouse.get_pos()[1] <= i.top+i.height:
-                        print(i.state)
                         i.click()
-                        
                         if (xmin_,y-(min_//x)) not in POINTS:
                             POINTS.append((xmin_,y-(min_//x)))
                         else:
@@ -192,6 +204,7 @@ while True:
                                     else:
                                         G.grid[abs(j[1]-y)*x+j[0]].color = (50,255,50)
                                         ADDED.append(abs(j[1]-y)*x+j[0])
+                                        
                                 else:
                                     TO_DRAW.remove(abs(j[1]-y)*x+j[0])
 
