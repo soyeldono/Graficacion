@@ -1,0 +1,53 @@
+2022-02-28 22:40:29,823 Se ha iniciado el programa. Tamanho de la ventana:(1420,680)
+2022-02-28 22:40:31,280 Se ha creado el triangulo Punto 1:(5, 8), Punto 2:(11, 17), Punto 3:(16, 5)
+2022-02-28 22:40:36,212 list.remove(x): x not in list
+Traceback (most recent call last):
+  File "main.py", line 196, in <module>
+    TO_DRAW.remove(abs(j[1]-y)*x+j[0])
+ValueError: list.remove(x): x not in list
+2022-02-28 22:40:36,213 list.remove(x): x not in list
+Traceback (most recent call last):
+  File "main.py", line 196, in <module>
+    TO_DRAW.remove(abs(j[1]-y)*x+j[0])
+ValueError: list.remove(x): x not in list
+2022-02-28 22:40:36,214 list.remove(x): x not in list
+Traceback (most recent call last):
+  File "main.py", line 196, in <module>
+    TO_DRAW.remove(abs(j[1]-y)*x+j[0])
+ValueError: list.remove(x): x not in list
+2022-02-28 22:40:36,215 list.remove(x): x not in list
+Traceback (most recent call last):
+  File "main.py", line 196, in <module>
+    TO_DRAW.remove(abs(j[1]-y)*x+j[0])
+ValueError: list.remove(x): x not in list
+2022-02-28 22:40:36,216 list.remove(x): x not in list
+Traceback (most recent call last):
+  File "main.py", line 196, in <module>
+    TO_DRAW.remove(abs(j[1]-y)*x+j[0])
+ValueError: list.remove(x): x not in list
+2022-02-28 22:40:36,217 list.remove(x): x not in list
+Traceback (most recent call last):
+  File "main.py", line 196, in <module>
+    TO_DRAW.remove(abs(j[1]-y)*x+j[0])
+ValueError: list.remove(x): x not in list
+2022-02-28 22:40:36,218 list.remove(x): x not in list
+Traceback (most recent call last):
+  File "main.py", line 196, in <module>
+    TO_DRAW.remove(abs(j[1]-y)*x+j[0])
+ValueError: list.remove(x): x not in list
+2022-02-28 22:40:36,219 list.remove(x): x not in list
+Traceback (most recent call last):
+  File "main.py", line 196, in <module>
+    TO_DRAW.remove(abs(j[1]-y)*x+j[0])
+ValueError: list.remove(x): x not in list
+2022-02-28 22:40:36,220 list.remove(x): x not in list
+Traceback (most recent call last):
+  File "main.py", line 196, in <module>
+    TO_DRAW.remove(abs(j[1]-y)*x+j[0])
+ValueError: list.remove(x): x not in list
+2022-02-28 22:40:36,221 list.remove(x): x not in list
+Traceback (most recent call last):
+  File "main.py", line 196, in <module>
+    TO_DRAW.remove(abs(j[1]-y)*x+j[0])
+ValueError: list.remove(x): x not in list
+2022-02-28 22:40:37,439 Se termino de ejecutar el programa
