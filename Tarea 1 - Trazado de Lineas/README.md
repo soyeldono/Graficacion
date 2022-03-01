@@ -22,9 +22,9 @@ python main.py [--s|--l|--d]
 
 ## Flags
 
-- --s [width,height]: Tamaño de la ventana
+- --s (width,height): Tamaño de la ventana
 - --l: Modo ligero, esto en caso de necesitar tamaños muy grandes y procesamientos muy pesados
-- --d [x,y]: Tamaño la cuadrícula donde se mostrarán las figuras
+- --d (x,y): Tamaño la cuadrícula donde se mostrarán las figuras
 
 
 ## Como usar
@@ -35,18 +35,18 @@ En la pantalla se pueden observar 2 partes. La primera, está ubicada en la part
 finge ser un monitor y cada cuadro corresponde a un pixel de este. El lado derecho se mostrarán las últimas 10 figuras que
 hayas pintado, da click encima de las que has creado para recalcar donde se encuentra dicha figura.
 
-**(Siempre que termines de dibujar una figura presiona r, esto debido a un bug que en un futuro se resolverá)**
-
 **Puntos**
 
-Para dibujar un punto solo da click izquierdo (L\_Click) en cualquiera de los pixeles. Para quitar un pixel encendido vuelve 
+**IMPORTANTE** el programa recordará todos los pixeles que hayas dado click, ya que con estos calculará y dibujará las figuras
+pero NO recordará los pixeles que se enciendan por crear un figura como por ejemplo un triangulo. Para dibujar un punto solo 
+da click izquierdo (L\_Click) en cualquiera de los pixeles. Para quitar un pixel encendido vuelve 
 a presionar encima del mismo pixel.
 
 **Linea** 
 
-Para dibujar lineas es necesario tener dos puntos, presiona la tecla _l_ (L minus). (En caso de que no se muestre es o, por que tienes más de dos puntos cargados
-en la memoria en cuyo caso presiona _r_ y vuelve a seleccionar otros dos prixeles y si esto no funciona presiona la tecla _esc_. Esto se debe a un bug
-que en un futuro se arreglará)
+Para dibujar lineas es necesario tener dos puntos, presiona la tecla _l_ (L minus). (En caso de que no se muestre es o, por que 
+tienes más de dos puntos cargados en la memoria en cuyo caso presiona _r_ y vuelve a seleccionar otros dos prixeles y si esto no 
+funciona presiona la tecla _esc_. Esto se debe a un bug que en un futuro se arreglará)
 
 **Triangulo**
 
